@@ -2,6 +2,8 @@ FROM ubuntu:24.04
 
 LABEL maintainer="Jonathan Gao <gsmlg.com@gmail.com>"
 
+LABEL org.opencontainers.image.source="https://github.com/gsmlg-ci/build-base"
+
 ENV DEBIAN_FRONTEND=noninteractive
 
 RUN apt-get update && apt-get upgrade -y
